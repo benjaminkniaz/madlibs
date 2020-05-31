@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import ParserFuncs from "./TextParserFuncs";
+import Layout from "./components/Layout";
+import FillTheBlank from "./components/FillTheBlank";
+import ParagraphWord from "./components/ParagraphWord";
+import "./App.scss";
 
-function App() {
+const example = `Use square brackets to create blanks in your Mad Lib. You can [verb] text here from any article or [noun] you wish!`;
+
+export default function App() {
+  const [madLibsText, setMadLibsText] = useState(example);
+  const [printableArea, setPrintableArea] = useState(<div />);
+  useEffect(createPrintableText, [madLibsText]);
+
+  function createPrintableText() {
+    var paragraph = [];
+
+    const words = ParserFuncs.getParagraphWords(madLibsText);
+
+    words.forEach((word, index) => {
+      const fillBlankInstruction = ParserFuncs.getFillBlankInstruction(word);
+      if (fillBlankInstruction !== "") {
+        const adjacentChars = ParserFuncs.getAdjacentFillBlankCharacters(word);
+        paragraph.push(
+          <FillTheBlank
+            key={index}
+            fillBlankInstruction={fillBlankInstruction}
+            adjacentFillBlankCharacters={adjacentChars}
+          />
+        );
+      } else {
+        paragraph.push(<ParagraphWord key={index} word={word} />);
+      }
+    });
+
+    setPrintableArea(paragraph);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout
+      printableArea={printableArea}
+      madLibsText={madLibsText}
+      setMadLibsText={setMadLibsText}
+    />
   );
 }
-
-export default App;

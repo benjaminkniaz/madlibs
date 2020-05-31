@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+
+body {
+	background: #eaf7eb;
+	font-family: "Work Sans", sans-serif;
+	margin: 15px 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 36px;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+@media print {
+	h1 {
+		display: none !important;
+	}
+	body {
+		background: #fff !important;
+	}
+}
