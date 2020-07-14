@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/madlibs/static/css/main.1f40a476.chunk.css",
-    "main.js": "/madlibs/static/js/main.c3acb0dc.chunk.js",
-    "main.js.map": "/madlibs/static/js/main.c3acb0dc.chunk.js.map",
+    "main.css": "/madlibs/static/css/main.352e70a9.chunk.css",
+    "main.js": "/madlibs/static/js/main.d989d07d.chunk.js",
+    "main.js.map": "/madlibs/static/js/main.d989d07d.chunk.js.map",
     "runtime-main.js": "/madlibs/static/js/runtime-main.f36effcc.js",
     "runtime-main.js.map": "/madlibs/static/js/runtime-main.f36effcc.js.map",
     "static/css/2.af3c1da9.chunk.css": "/madlibs/static/css/2.af3c1da9.chunk.css",
     "static/js/2.196f6975.chunk.js": "/madlibs/static/js/2.196f6975.chunk.js",
     "static/js/2.196f6975.chunk.js.map": "/madlibs/static/js/2.196f6975.chunk.js.map",
     "index.html": "/madlibs/index.html",
-    "precache-manifest.e098a6bc383e75bca47235a6ea561bea.js": "/madlibs/precache-manifest.e098a6bc383e75bca47235a6ea561bea.js",
+    "precache-manifest.bc47f6f4a0ba5189505d27d332d97adb.js": "/madlibs/precache-manifest.bc47f6f4a0ba5189505d27d332d97adb.js",
     "service-worker.js": "/madlibs/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/madlibs/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.1f40a476.chunk.css.map": "/madlibs/static/css/main.1f40a476.chunk.css.map",
+    "static/css/main.352e70a9.chunk.css.map": "/madlibs/static/css/main.352e70a9.chunk.css.map",
     "static/js/2.196f6975.chunk.js.LICENSE.txt": "/madlibs/static/js/2.196f6975.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f36effcc.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.196f6975.chunk.js",
-    "static/css/main.1f40a476.chunk.css",
-    "static/js/main.c3acb0dc.chunk.js"
+    "static/css/main.352e70a9.chunk.css",
+    "static/js/main.d989d07d.chunk.js"
   ]
 }
