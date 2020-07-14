@@ -5,7 +5,11 @@ export default ({ printableArea, madLibsText, setMadLibsText }) => (
     <Container>
         <Row>
             <Col>
-                <h1>Printable, Cut-and-Paste "Mad Libs"</h1>
+                <h1>Printable "Mad Libs"</h1>
+                <p>
+                    Type or paste your story below. Use square brackets to
+                    create blanks in the text. Have fun!
+                </p>
                 <Form className="mad-libs-entry-area">
                     <Form.Group>
                         <Form.Control

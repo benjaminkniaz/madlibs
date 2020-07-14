@@ -5,7 +5,7 @@ import FillTheBlank from "./components/FillTheBlank";
 import ParagraphWord from "./components/ParagraphWord";
 import "./App.scss";
 
-const example = `Type the story here. Use square brackets to create blanks in the paragraph. For example: "Johnny [verb] a [adjective] pie because it was [holiday]."`;
+const example = `Amanda [past-tense verb] a really delicious [adjective] pie because today she turned [number] years old.`;
 
 export default function App() {
     const [madLibsText, setMadLibsText] = useState(example);
