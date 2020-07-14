@@ -1,71 +1,71 @@
 .mad-libs-entry-area {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	textarea.mad-libs-create-text {
-		line-height: 2em;
-		font-size: 21px;
-		padding: 30px;
-	}
+    padding-top: 15px;
+    padding-bottom: 15px;
+    textarea.mad-libs-create-text {
+        line-height: 2em;
+        font-size: 18px;
+        padding: 30px;
+    }
 }
 
 .result-text {
-	font-weight: bold;
-	font-family: sans-serif;
-	margin: 0;
-	padding: 0;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .printable-area {
-	font-size: 24px;
-	line-height: 60px;
-	padding: 30px;
-	.fill-blank {
-		width: 300px;
-		display: inline-block;
-		.instruction {
-			position: relative;
-			border-top: 2px solid black;
-			top: 20px;
-			font-size: 18px;
-			text-align: center;
-			display: block;
-			line-height: 24px;
-		}
-	}
+    font-size: 24px;
+    line-height: 60px;
+    padding: 30px;
+    .fill-blank {
+        width: 300px;
+        display: inline-block;
+        .instruction {
+            position: relative;
+            border-top: 2px solid black;
+            top: 20px;
+            font-size: 18px;
+            text-align: center;
+            display: block;
+            line-height: 24px;
+        }
+    }
 }
 
 .print-btn {
-	margin-top: 10px;
-	margin-left: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
 }
 
 .credit {
-	font-size: 12px;
-	margin-top: 50px;
-	margin-left: 30px;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-left: 30px;
 }
 
 @media print {
-	.print-btn,
-	.madlib-entry-area,
-	.credit {
-		display: none !important;
-	}
+    .print-btn,
+    .madlib-entry-area,
+    .credit {
+        display: none !important;
+    }
 
-	.container {
-		max-width: none !important;
-		.printable-area {
-			font-size: 36px;
-			line-height: 90px;
-			padding: 0;
-			.fill-blank {
-				width: 450px;
-				.instruction {
-					top: 30px;
-					font-size: 27px;
-					line-height: 36px;
-				}
-			}
-		}
-	}
+    .container {
+        max-width: none !important;
+        .printable-area {
+            font-size: 36px;
+            line-height: 90px;
+            padding: 0;
+            .fill-blank {
+                width: 450px;
+                .instruction {
+                    top: 30px;
+                    font-size: 27px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
 }
